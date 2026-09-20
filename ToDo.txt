@@ -1,0 +1,8 @@
+* Make achievement scrollbar easier to use
+* Change controls instructions icons
+* Make UI tabs bigger
+* Can't unequip cosmetics?
+	* Can't reproduce
+* Empty power-ups appear on classic mode
+* Menu text pop up boxes are glitchy
+* Clubless mode doesn't work 

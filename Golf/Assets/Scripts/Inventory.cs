@@ -925,8 +925,18 @@ public class Inventory : MonoBehaviour
 
     private void DisplayAbility()
     {
-        if (unlockedAbilities == null || abilityButtons == null || currentMap == Map.TYPE.CLASSIC)
+        if (abilityButtons == null || abilityButtons.Length <= 0)
         {
+            // No buttons, nothing to display
+            return;
+        }
+        if (unlockedAbilities == null  || currentMap == Map.TYPE.CLASSIC)
+        {
+            // No abilities, disable buttons
+            for (int i = 0; i < abilityButtons.Length; i++)
+            {
+                abilityButtons[i].SetActive(false);
+            }
             return;
         }
         for (int i = 0; i < abilityButtons.Length; i++)

@@ -16,6 +16,9 @@ public class HoverDescription : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        return; // Disable hover description for mobile
+
+
         description.SetActive(true);
         MainMenu.State state = menu.GetState();
         bool isSpeedrunSelect = state == MainMenu.State.SPEEDRUN_SELECT;
@@ -34,7 +37,7 @@ public class HoverDescription : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        description.SetActive(false);
+        //description.SetActive(false);
     }
 
     void OnEnable()

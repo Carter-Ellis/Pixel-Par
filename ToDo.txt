@@ -2,5 +2,4 @@
 * Change controls instructions icons
 * Can't unequip cosmetics?
 	* Can't reproduce
-* Menu text pop up boxes are glitchy
 * Clubless mode doesn't work 

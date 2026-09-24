@@ -205,8 +205,8 @@ public class PlayerInput : MonoBehaviour
         return axesValue[(int)axis];
     }
 
-    public static Vector2 cursorPosition { get
-        {
+    public static Vector2 cursorPosition {
+        get {
             return Input.mousePosition;
         }
     }

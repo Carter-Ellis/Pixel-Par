@@ -282,8 +282,14 @@ public class Ball : MonoBehaviour
 
         if (isBattleMode)
         {
-            movement.x = PlayerInput.get(PlayerInput.Axis.Horizontal);
-            movement.y = PlayerInput.get(PlayerInput.Axis.Vertical);
+            if (Input.touchCount > 0)
+            {
+                movement = (Input.GetTouch(0).position - new Vector2(Screen.width, Screen.height) / 2).normalized;
+            }
+            else
+            {
+                movement = new Vector2(0, 0);
+            }
         }
         
         if (takingDamage)

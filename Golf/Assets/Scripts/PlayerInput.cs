@@ -37,21 +37,21 @@ public class PlayerInput : MonoBehaviour
     };
 
     private static Sprite[] sprites = null;
-    private static string spritePath = "ControlTipsUI";
+    private static string spritePath = "ControlTipsUI_Mobile";
 
     private static int[] spriteIndices =
     {
-        7,
-        6,
-        8,
-        9,
+        0,
+        0,
         0,
         1,
-        10,
-        4,
-        5,
+        0,
+        0,
         2,
-        3,
+        0,
+        0,
+        0,
+        0,
     };
 
     private static float[] axesValue = new float[(int)Axis.MAX_AXIS];

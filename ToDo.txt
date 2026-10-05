@@ -1,5 +1,3 @@
-* Make achievement scrollbar easier to use
 * Change controls instructions icons
 * Can't unequip cosmetics?
 	* Can't reproduce
-* Clubless mode doesn't work 

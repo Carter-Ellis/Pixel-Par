@@ -975,9 +975,9 @@ public class Inventory : MonoBehaviour
 
     public void AddAbility(Ability ability)
     {
-        DisplayAbility();
         if (ability == null)
         {
+            DisplayAbility();
             return;
         }
 
@@ -1002,6 +1002,8 @@ public class Inventory : MonoBehaviour
         {
             abilityInterface?.SetActive(true);
         }
+
+        DisplayAbility();
 
     }
 

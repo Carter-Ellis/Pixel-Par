@@ -1,6 +1,6 @@
 * Remove unused controller tips (like menu or tab)
 * Fix controller tip for abilities
-* When ability charges empty, button is faded but icon isn't
 * Getting ability for the first time doesn't show up
+* Final achievement might not work?
 * Can't unequip cosmetics?
 	* Can't reproduce

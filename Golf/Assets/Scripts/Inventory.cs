@@ -952,7 +952,8 @@ public class Inventory : MonoBehaviour
             }
 
             UnityEngine.UI.Button button = abilityButtons[i].GetComponent<UnityEngine.UI.Button>();
-            button.interactable = unlockedAbilities[i].getCharges(ball) > 0;
+            bool isEmpty = unlockedAbilities[i].getCharges(ball) <= 0;
+            button.interactable = !isEmpty;
             TextMeshProUGUI text = abilityButtons[i].GetComponentInChildren<TextMeshProUGUI>();
             text.text = unlockedAbilities[i].getCharges(ball).ToString();
             text.color = unlockedAbilities[i].color;
@@ -963,7 +964,8 @@ public class Inventory : MonoBehaviour
                 if (img != null)
                 {
                     img.sprite = abilitySprites[i];
-                    img.color = Color.white;
+                    Color emptyColor = new Color(1f, 1f, 1f, 0.5f);
+                    img.color = isEmpty ? emptyColor : Color.white;;
                     break;
                 }
             }

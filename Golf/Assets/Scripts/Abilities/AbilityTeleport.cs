@@ -8,6 +8,7 @@ public class AbilityTeleport : Ability
     public bool isReady;
     public float maxTeleportRange = 3f;
     private int charges = 1;
+    private Inventory inventory = GameObject.FindAnyObjectByType<Inventory>();
 
     public AbilityTeleport(Color color)
     {
@@ -102,6 +103,7 @@ public class AbilityTeleport : Ability
         ball.transform.position = new Vector3(mousePos.x, mousePos.y, 0);
         ball.DisplayTeleportParticles();
         charges--;
+        inventory.DisplayAbility();
         isReady = false;
         ball.isTeleportReady = false;
         ball.isBallLocked = false;

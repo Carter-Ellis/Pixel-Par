@@ -1,7 +1,7 @@
 * Remove unused controller tips (like menu or tab)
 * Fix controller tip for abilities
 * Final achievement might not work?
-* Teleport charges don't refill correctly
 * Stroke timer slider is in between abilities
+* Add arrow above clickable fans?
 * Can't unequip cosmetics?
 	* Can't reproduce

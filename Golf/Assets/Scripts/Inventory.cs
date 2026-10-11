@@ -923,7 +923,7 @@ public class Inventory : MonoBehaviour
         indexOfAbility = index;
     }
 
-    private void DisplayAbility()
+    public void DisplayAbility()
     {
         if (abilityButtons == null || abilityButtons.Length <= 0)
         {
@@ -1009,9 +1009,9 @@ public class Inventory : MonoBehaviour
 
     public void RechargeAbility(ABILITIES type)
     {
-        DisplayAbility();
         if (unlockedAbilities == null)
         {
+            DisplayAbility();
             return;
         }
         foreach (Ability ability in unlockedAbilities)
@@ -1022,6 +1022,7 @@ public class Inventory : MonoBehaviour
                 break;
             }
         }
+        DisplayAbility();
     }
 
     private void clearPopups()
